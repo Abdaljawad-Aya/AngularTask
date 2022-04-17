@@ -1,1 +1,25 @@
-<p>bookmark works!</p>
+<h3>You have {{ bookmarks.length }} bookmarked movies.</h3>
+<div *ngIf="bookmarks.length != 0">
+  <div class="row">
+    <div class="col-md-3 col-sm-6" *ngFor="let movie of bookmarks">
+      <nb-card-body>
+        <div class="movie-poster">
+          <!-- <img src="{{ movie.Poster }}" alt=""> -->
+        </div>
+        <div class="movie-content-container">
+          <nb-icon (click)="removeBookmarks(movie)" class="bookmark_icon" nbPrefix icon="bookmark" pack="eva"
+            style="color: red;"></nb-icon>
+          <div class="movie-title">
+            <!-- <h5>{{ movie.Title }}</h5> -->
+          </div>
+          <div class="movie-details-container">
+            <div class="year-genre">
+              <p class="genre"><span>Type : </span> {{ movie }}</p>
+              <p class="year"><span>Year : </span> {{ movie }}</p>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+    </div>
+  </div>
+</div>

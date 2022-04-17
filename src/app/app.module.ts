@@ -6,7 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { MovieComponent } from './movie/movie.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbCardModule, NbFormFieldModule, NbIconModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbCardModule, NbFormFieldModule, NbIconModule, NbInputModule, NbButtonModule, NbButtonGroupModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { DataServices } from './service/data.services';
@@ -29,7 +29,10 @@ import { FormsModule } from '@angular/forms';
     NbIconModule,
     NbEvaIconsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NbInputModule,
+    NbButtonModule,
+    NbButtonGroupModule
     
   ],
   providers: [DataServices],

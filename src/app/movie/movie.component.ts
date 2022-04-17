@@ -9,7 +9,7 @@ import { DataServices } from "../service/data.services";
 })
 export class MovieComponent implements OnInit {
 
-  movies:any  = [];
+  movies  = [];
   bookmarks = [];
   // currentBookmark = BookmarkComponent;
   constructor(private dataService : DataServices) { }
@@ -39,7 +39,7 @@ export class MovieComponent implements OnInit {
 
       for (let i = 0; i < this.bookmarks.length; i++) 
       {
-          if(this.bookmarks[i].imdbID == movie.imdbID)
+          if(this.bookmarks[i] == movie.imdbID)
           {
               foundAtPos = 1;
           }
@@ -48,7 +48,7 @@ export class MovieComponent implements OnInit {
       {
         console.log('No updates');
       } else {
-        this.bookmarks.push(movie);
+        // this.bookmarks.push(movie);
         localStorage.setItem('bookmarks', JSON.stringify(this.bookmarks));
       }
     }

@@ -1,0 +1,26 @@
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+}
+
+h3 {
+    color: white;
+}
+
+.search-btn {
+    background-color: #e50914 !important;
+    border-color: #e50914 !important;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

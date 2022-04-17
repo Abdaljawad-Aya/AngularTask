@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { BookmarkComponent } from "./bookmark/bookmark.component";
 
 const routes: Routes = [
+  // I used routing to navigate through pages
   {
     path: '',
     component: HomeComponent,

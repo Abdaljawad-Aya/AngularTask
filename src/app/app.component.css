@@ -4,6 +4,7 @@
 .header-wrapper {
     display: flex;
     justify-content: space-around;
+    flex: 1;
 }
 
 .body-container {
