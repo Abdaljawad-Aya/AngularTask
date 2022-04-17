@@ -1,0 +1,30 @@
+// import Nebular Theme System and the default theme
+@forward '@nebular/theme/styles/theming';
+// @use '@nebular/theme/styles/theming' as *;
+@use '@nebular/theme/styles/themes/default';
+
+
+$nb-themes: nb-register-theme(
+(
+    // new primary color 
+    color-primary-100: #f00,
+    color-primary-200: #b00,
+    color-primary-300: #700,
+    color-primary-400: #500,
+    color-primary-500: #400,
+    color-primary-600: #300,
+    color-primary-700: #200,
+    color-primary-800: #100,
+    color-primary-900: #000,
+
+    text-basic-color: color-basic-800,
+    text-disabled-color: color-basic-600,
+    footer-text-color : #999999,
+    footer-padding : 0.1rem,
+    footer-height : 0.1rem,
+    footer-background-color : #000,
+    footer-divider-color : #000
+), 
+   movieSearch, 
+   default
+);

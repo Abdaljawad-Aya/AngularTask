@@ -1,0 +1,44 @@
+.logo {
+    width: 10rem;
+}
+.header-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-container {
+    background: radial-gradient(#ff000080, #000000);
+}
+
+.header {
+    background: linear-gradient(to bottom, black, black);
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.btn {
+    background: #e50914;
+    border: none;
+    /* border-radius: 5px; */
+    color: white;
+    padding: 7px 17px;
+    text-align: center;
+    text-decoration: none!important;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+}
+.btn:hover {
+    color: white;
+}
+p {
+    color: #999999;
+}
+.footer a {
+    color: #e50914;
+}
+a:hover {
+    text-decoration: none;
+}

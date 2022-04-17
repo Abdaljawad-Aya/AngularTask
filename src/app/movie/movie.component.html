@@ -1,0 +1,31 @@
+<div class="container py-4">
+   <div class="row">
+      <div class="col-md-3 col-sm-6" *ngFor="let movie of moviedata">
+         <nb-card-body>
+            <div class="movie-poster">
+               <img src="{{ movie.Poster }}" alt="{{ movie.Title }}" />
+            </div>
+            <div class="movie-content-container">
+               <nb-icon
+                 (click)="getMovieDetails(movie)"
+                 class="bookmark_icon"
+                 nbPrefix
+                 icon="bookmark"
+                 pack="eva"
+                 [ngClass]="{active : movie.active}"
+               >
+               </nb-icon>
+               <div class="movie-title">
+                  <h5>{{ movie.Title }}</h5>
+               </div>
+               <div class="movie-details-container">
+                  <div class="year-genre">
+                    <p class="genre"><span>Type :</span>{{ movie.Type }}</p>
+                    <p class="genre"><span>Year :</span>{{ movie.Year }}</p>
+                  </div>
+               </div>
+            </div>
+         </nb-card-body>
+      </div>
+   </div>
+</div>
